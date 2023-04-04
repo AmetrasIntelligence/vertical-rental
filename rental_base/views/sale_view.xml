@@ -93,10 +93,7 @@
                 />
             </xpath>
             <!-- Hide fields inserted by sale module to move them to new location -->
-            <xpath
-                expr="//group[@name='sales_person']//field[@name='client_order_ref']"
-                position="attributes"
-            >
+            <xpath expr="//field[@name='client_order_ref']" position="attributes">
                 <attribute name="attrs">{'invisible': 1}</attribute>
             </xpath>
             <xpath
@@ -120,7 +117,7 @@
                 <separator colspan="2" />
                 <field name="client_order_ref" string="Order Reference" />
             </xpath>
-            <xpath expr="//label[@for='pricelist_id']" position="before">
+            <xpath expr="//field[@name='pricelist_id']" position="before">
                 <separator colspan="2" />
                 <field
                     name="analytic_account_id"

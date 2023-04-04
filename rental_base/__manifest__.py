@@ -2,10 +2,11 @@
 
 {
     "name": "Rental Base",
-    "version": "14.0.1.0.1",
+    "version": "13.0.1.0.1",
     "category": "Rental",
     "summary": "Manage Rental of Products",
-    "author": "elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "author": "Ametras intelligence GmbH, elego Software Solutions GmbH,"
+    " Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/vertical-rental",
     "depends": [
         "account",
