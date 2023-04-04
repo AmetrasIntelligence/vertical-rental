@@ -505,7 +505,7 @@ class TestRentalPricelist(RentalStockCommon):
         with self.assertRaises(exceptions.UserError) as e:
             self.rental_order.action_confirm()
         self.assertEqual(
-            "The product Product D is not correctly configured.", str(e.exception)
+            "The product Product D is not correctly configured.", str(e.exception.name)
         )
 
     def test_05_check_rental_productE(self):
@@ -518,14 +518,14 @@ class TestRentalPricelist(RentalStockCommon):
             rental_serviceE.type = "consu"
         self.assertEqual(
             "The rental product 'Rental of Product E (Day(s))' must be of type 'Service'.",
-            str(e.exception),
+            str(e.exception.name),
         )
         with self.assertRaises(ValidationError) as e:
             rental_serviceE.must_have_dates = False
         self.assertEqual(
             "The rental product 'Rental of Product E (Day(s))'"
             " must have the option 'Must Have Start and End Dates' checked.",
-            str(e.exception),
+            str(e.exception.name),
         )
         # check onchange method of product.pricelist.item
         self.productE.write(
