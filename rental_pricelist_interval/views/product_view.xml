@@ -7,7 +7,7 @@
             <field name="model">product.product</field>
             <field name="inherit_id" ref="rental_pricelist.product_normal_form_view" />
             <field name="arch" type="xml">
-                <xpath expr="//page[@name='rental_price']/group" position='inside'>
+                <xpath expr="//page[@name='rental_price']" position='inside'>
                     <group string="Interval Basis">
                         <field name="rental_of_interval" />
                         <field name="def_interval_pricelist_id" invisible="1" />
@@ -23,8 +23,9 @@
                             name="product_rental_interval_id"
                             groups="base.group_no_one"
                         />
-                        <strong colspan="1" class="oe_inline">Bulk Prices</strong>
+                        <strong colspan="2" class="oe_inline">Bulk Prices</strong>
                         <button
+                            colspan="2"
                             name="action_reset_rental_price_interval_items"
                             type="object"
                             string="Reset Interval Prices"
