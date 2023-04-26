@@ -120,7 +120,7 @@
                 <separator colspan="2" />
                 <field name="client_order_ref" string="Order Reference" />
             </xpath>
-            <xpath expr="//label[@for='pricelist_id']" position="before">
+            <xpath expr="//field[@name='pricelist_id']" position="before">
                 <separator colspan="2" />
                 <field
                     name="analytic_account_id"

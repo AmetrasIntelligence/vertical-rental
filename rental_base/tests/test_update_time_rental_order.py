@@ -20,11 +20,11 @@ class TestUpdateTimeRentalOrder(RentalStockCommon):
         self.service_rental = self._create_rental_service_day(self.product_rental)
         # dates
         self.date_0101 = fields.Date.from_string("2021-01-01")
-        self.date_0110 = fields.Date.from_string("2021-01-10")
-        self.date_0102 = fields.Date.from_string("2021-01-02")
-        self.date_0111 = fields.Date.from_string("2021-01-11")
-        self.date_0103 = fields.Date.from_string("2021-01-03")
-        self.date_0112 = fields.Date.from_string("2021-01-12")
+        self.date_0110 = fields.Date.from_string("2021-01-01")
+        self.date_0102 = fields.Date.from_string("2021-01-01")
+        self.date_0111 = fields.Date.from_string("2021-01-01")
+        self.date_0103 = fields.Date.from_string("2021-01-01")
+        self.date_0112 = fields.Date.from_string("2021-01-01")
 
     def test_00_update_time_rental_order(self):
         # rental order
