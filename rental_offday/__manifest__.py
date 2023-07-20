@@ -5,7 +5,8 @@
     "summary": "Manage off-days in rentals on daily basis",
     "version": "13.0.1.0.0",
     "category": "Rental",
-    "author": "Ametras intelligence GmbH, elego Software Solutions GmbH, Odoo Community Association (OCA)",
+    "author": "Ametras intelligence GmbH, elego Software Solutions GmbH,"
+    " Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/vertical-rental",
     "depends": [
         "rental_pricelist",
