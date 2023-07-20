@@ -6,10 +6,10 @@
             <field name="name">view.product.product.form</field>
             <field name="model">product.product</field>
             <field name="priority">112</field> <!--Priority greater than 100-->
-            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="inherit_id" ref="product.product_normal_form_view" />
             <field name="arch" type="xml">
                 <!-- Use of position=replace: It is necessary to adjust view design -->
-                <group name="rental-product" position="replace"/>
+                <group name="rental-product" position="replace" />
                 <xpath expr="//notebook" position="inside">
                     <page
                         name="rental_price"
@@ -17,8 +17,8 @@
                         attrs="{'invisible': ['|', ('rental', '=', False), ('type', '!=', 'product')]}"
                     >
                         <group string="Monthly Basis">
-                            <field name="rental_of_month"/>
-                            <field name="def_pricelist_id" invisible="1"/>
+                            <field name="rental_of_month" />
+                            <field name="def_pricelist_id" invisible="1" />
                             <field
                                 name="rental_price_month"
                                 attrs="{'invisible': [('rental_of_month','=',False)]}"
@@ -47,7 +47,7 @@
                                 colspan="2"
                             >
                                 <tree string="Pricelist Items" editable="bottom">
-                                    <field name="min_quantity"/>
+                                    <field name="min_quantity" />
                                     <field
                                         name="fixed_price"
                                         string="Price"
@@ -55,16 +55,16 @@
                                         widget="monetary"
                                         options="{'currency_field': 'currency_id'}"
                                     />
-                                    <field name="compute_price" invisible="1"/>
-                                    <field name="applied_on" invisible="1"/>
-                                    <field name="pricelist_id" invisible="1"/>
-                                    <field name="product_id" invisible="1"/>
-                                    <field name="company_id" invisible="1"/>
+                                    <field name="compute_price" invisible="1" />
+                                    <field name="applied_on" invisible="1" />
+                                    <field name="pricelist_id" invisible="1" />
+                                    <field name="product_id" invisible="1" />
+                                    <field name="company_id" invisible="1" />
                                 </tree>
                             </field>
                         </group>
                         <group string="Daily Basis">
-                            <field name="rental_of_day"/>
+                            <field name="rental_of_day" />
                             <field
                                 name="rental_price_day"
                                 attrs="{'invisible': [('rental_of_day','=',False)]}"
@@ -93,7 +93,7 @@
                                 colspan="2"
                             >
                                 <tree string="Pricelist Items" editable="bottom">
-                                    <field name="min_quantity"/>
+                                    <field name="min_quantity" />
                                     <field
                                         name="fixed_price"
                                         string="Price"
@@ -101,16 +101,16 @@
                                         widget="monetary"
                                         options="{'currency_field': 'currency_id'}"
                                     />
-                                    <field name="compute_price" invisible="1"/>
-                                    <field name="applied_on" invisible="1"/>
-                                    <field name="pricelist_id" invisible="1"/>
-                                    <field name="product_id" invisible="1"/>
-                                    <field name="company_id" invisible="1"/>
+                                    <field name="compute_price" invisible="1" />
+                                    <field name="applied_on" invisible="1" />
+                                    <field name="pricelist_id" invisible="1" />
+                                    <field name="product_id" invisible="1" />
+                                    <field name="company_id" invisible="1" />
                                 </tree>
                             </field>
                         </group>
                         <group string="Hourly Basis">
-                            <field name="rental_of_hour"/>
+                            <field name="rental_of_hour" />
                             <field
                                 name="rental_price_hour"
                                 attrs="{'invisible': [('rental_of_hour','=',False)]}"
@@ -139,7 +139,7 @@
                                 colspan="2"
                             >
                                 <tree string="Pricelist Items" editable="bottom">
-                                    <field name="min_quantity"/>
+                                    <field name="min_quantity" />
                                     <field
                                         name="fixed_price"
                                         string="Price"
@@ -147,11 +147,11 @@
                                         widget="monetary"
                                         options="{'currency_field': 'currency_id'}"
                                     />
-                                    <field name="compute_price" invisible="1"/>
-                                    <field name="applied_on" invisible="1"/>
-                                    <field name="pricelist_id" invisible="1"/>
-                                    <field name="product_id" invisible="1"/>
-                                    <field name="company_id" invisible="1"/>
+                                    <field name="compute_price" invisible="1" />
+                                    <field name="applied_on" invisible="1" />
+                                    <field name="pricelist_id" invisible="1" />
+                                    <field name="product_id" invisible="1" />
+                                    <field name="company_id" invisible="1" />
                                 </tree>
                             </field>
                         </group>
@@ -165,10 +165,10 @@
             <field name="name">view.product.template.form</field>
             <field name="model">product.template</field>
             <field name="priority">111</field> <!--Priority greater than 100-->
-            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
             <field name="arch" type="xml">
                 <!-- Use of position=replace: It is necessary to adjust view design -->
-                <group name="rental-product-template" position="replace"/>
+                <group name="rental-product-template" position="replace" />
             </field>
         </record>
     </data>
