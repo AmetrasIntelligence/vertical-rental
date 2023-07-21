@@ -151,9 +151,9 @@ class SaleOrderLine(models.Model):
                         )
                     )
 
-    def _prepare_invoice_line(self, **optional_values):
+    def _prepare_invoice_line(self):
         self.ensure_one()
-        res = super()._prepare_invoice_line(**optional_values)
+        res = super()._prepare_invoice_line()
         if self.product_id.income_analytic_account_id:
             res["analytic_account_id"] = self.product_id.income_analytic_account_id.id
         return res
