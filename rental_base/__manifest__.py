@@ -2,7 +2,7 @@
 
 {
     "name": "Rental Base",
-    "version": "13.0.1.0.1",
+    "version": "13.0.1.1.0",
     "category": "Rental",
     "summary": "Manage Rental of Products",
     "author": "Ametras intelligence GmbH, elego Software Solutions GmbH,"

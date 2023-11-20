@@ -10,14 +10,14 @@ from odoo.tools import float_round
 class SaleOrder(models.Model):
     _inherit = "sale.order"
 
-    default_start_date = fields.Date(
+    default_start_date = fields.Datetime(
         string="Default Start Date",
         compute="_compute_default_start_date",
         readonly=False,
         store=True,
     )
 
-    default_end_date = fields.Date(
+    default_end_date = fields.Datetime(
         string="Default End Date",
         compute="_compute_default_end_date",
         readonly=False,
@@ -75,7 +75,7 @@ class SaleOrderLine(models.Model):
         related="product_id.rented_product_id.uom_id",
     )
 
-    start_date = fields.Date(
+    start_date = fields.Datetime(
         states={
             "draft": [("readonly", False)],
             "sent": [("readonly", False)],
@@ -83,7 +83,7 @@ class SaleOrderLine(models.Model):
         }
     )
 
-    end_date = fields.Date(
+    end_date = fields.Datetime(
         states={
             "draft": [("readonly", False)],
             "sent": [("readonly", False)],
