@@ -127,7 +127,7 @@ class TestRentalPricelist(RentalStockCommon):
                 "rental_price_hour": 1000,
             }
         )
-        self.today = fields.Date.from_string(fields.Date.today())
+        self.today = fields.Datetime.from_string(fields.Date.today())
         self.tomorrow = self.today + relativedelta(days=1)
         self.date_28_day_later = self.today + relativedelta(days=28)
         self.date_63_day_later = self.today + relativedelta(days=63)
