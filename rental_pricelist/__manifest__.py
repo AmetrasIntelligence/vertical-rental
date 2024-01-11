@@ -4,7 +4,7 @@
     "name": "Rental Pricelist",
     "summary": "Enables the user to define different rental prices with "
     "time uom (Month, Day and Hour).",
-    "version": "13.0.1.0.0",
+    "version": "13.0.1.0.1",
     "category": "Rental",
     "author": "Ametras intelligence GmbH, elego Software Solutions GmbH,"
     " Odoo Community Association (OCA)",
