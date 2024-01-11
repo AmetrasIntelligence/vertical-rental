@@ -21,11 +21,11 @@ class UpdateSaleLineDateLine(models.TransientModel):
         required=True,
     )
 
-    date_start = fields.Date(
+    date_start = fields.Datetime(
         string="Date Start",
     )
 
-    date_end = fields.Date(
+    date_end = fields.Datetime(
         string="Date End",
     )
 
@@ -43,12 +43,12 @@ class UpdateSaleLineDate(models.TransientModel):
     _name = "update.sale.line.date"
     _description = "Wizard for updating sale order line dates"
 
-    date_start = fields.Date(
+    date_start = fields.Datetime(
         string="Date Start",
         required=True,
     )
 
-    date_end = fields.Date(
+    date_end = fields.Datetime(
         string="Date End",
         required=True,
     )

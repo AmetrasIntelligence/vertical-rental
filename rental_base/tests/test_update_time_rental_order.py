@@ -21,10 +21,10 @@ class TestUpdateTimeRentalOrder(RentalStockCommon):
         # dates
         self.date_0101 = fields.Date.from_string("2021-01-01")
         self.date_0110 = fields.Date.from_string("2021-01-01")
-        self.date_0102 = fields.Date.from_string("2021-01-01")
-        self.date_0111 = fields.Date.from_string("2021-01-01")
-        self.date_0103 = fields.Date.from_string("2021-01-01")
-        self.date_0112 = fields.Date.from_string("2021-01-01")
+        self.date_0102 = fields.Datetime.from_string("2021-01-01")
+        self.date_0111 = fields.Datetime.from_string("2021-01-01")
+        self.date_0103 = fields.Datetime.from_string("2021-01-01")
+        self.date_0112 = fields.Datetime.from_string("2021-01-01")
 
     def test_00_update_time_rental_order(self):
         # rental order
