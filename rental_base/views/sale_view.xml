@@ -78,13 +78,13 @@
                 expr="//group[@name='sales_person']//field[@name='client_order_ref']"
                 position="attributes"
             >
-                <attribute name="attrs">{'invisible': 1}</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
             <xpath
                 expr="//group[@name='sale_info']//field[@name='analytic_account_id']"
                 position="attributes"
             >
-                <attribute name="attrs">{'invisible': 1}</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
 
             <!-- Sheet -->
@@ -97,10 +97,10 @@
                     options="{'horizontal': true}"
                 />
             </xpath>
-            <xpath expr="//field[@name='partner_shipping_id']" position="after">
-                <separator colspan="2" />
-                <field name="client_order_ref" string="Order Reference" />
-            </xpath>
+<!--            <xpath expr="//field[@name='partner_shipping_id']" position="after">-->
+<!--                <separator colspan="2" />-->
+<!--                <field name="client_order_ref" string="Order Reference" />-->
+<!--            </xpath>-->
             <xpath expr="//label[@for='pricelist_id']" position="before">
                 <separator colspan="2" />
                 <field
@@ -115,13 +115,13 @@
             <!-- Sale Order Lines -->
             <!-- Hide fields inserted by sale module to move them to new location -->
             <xpath expr="//field[@name='tax_id']" position="attributes">
-                <attribute name="attrs">{'invisible': 1}</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr="//label[@for='customer_lead']" position="attributes">
-                <attribute name="attrs">{'invisible': 1}</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
             <xpath expr="//div[field[@name='customer_lead']]" position="attributes">
-                <attribute name="attrs">{'invisible': 1}</attribute>
+                <attribute name="invisible">1</attribute>
             </xpath>
 
 
